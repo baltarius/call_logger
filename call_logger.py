@@ -43,7 +43,7 @@ class CallLogger():
         cur.execute('''CREATE TABLE IF NOT EXISTS calls
             (id INTEGER PRIMARY KEY AUTOINCREMENT,
             start_call TEXT,
-            end_call TIMESTAMP,
+            end_call TEXT,
             duration INTEGER,
             in_or_out TEXT,
             company TEXT,
