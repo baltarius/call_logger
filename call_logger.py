@@ -164,7 +164,7 @@ class CallWindow():
         self.direction_var = tk.StringVar(value=call_data["in_or_out"])
         tk.Entry(self.window, textvariable=self.direction_var).grid(row=1, column=1)
         tk.Label(self.window, text="Start Time").grid(row=2, column=0)
-        self.start_var = tk.StringVar(value=call_data["timestamp"])
+        self.start_var = tk.StringVar(value=call_data["start_call"])
         tk.Entry(self.window, textvariable=self.start_var).grid(row=2, column=1)
         tk.Label(self.window, text="Company").grid(row=3, column=0)
         self.company_var = tk.StringVar(value=call_data["company"])
